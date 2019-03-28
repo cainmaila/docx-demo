@@ -1,0 +1,14 @@
+{
+  "name": "docx-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cainmaila/docx-demo.git",
+  "author": "Cain Chu <cainmaila@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "docx": "^4.7.1"
+  },
+  "scripts": {
+    "build":"node index.js"
+  }
+}

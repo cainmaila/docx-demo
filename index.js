@@ -1,0 +1,10 @@
+const fs = require("fs") 
+const docx = require("docx")
+const doc = new docx.Document()
+const packer = new docx.Packer()
+const file_contents = fs.readFileSync('doc.txt', 'utf-8')
+const paragraph = new docx.Paragraph(file_contents)
+doc.addParagraph(paragraph)
+packer.toBuffer(doc).then((buffer)=>{
+    fs.writeFileSync("My Document.docx", buffer)
+})
